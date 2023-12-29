@@ -1,0 +1,20 @@
+nav {
+	#hamburger {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1880px) {
+	nav {
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	nav {
+	}
+}
+
+@media screen and (max-width: 720px) {
+	nav {
+	}
+}

@@ -1,0 +1,363 @@
+@import url('./nav.css');
+@import url('./home.css');
+:root {
+	--Black: #383838;
+	--Grey: #808086;
+	--LGrey: #d9d9d9;
+	--White: #f5f7f8;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+@keyframes left {
+	from {
+		left: -50%;
+		opacity: 0;
+	}
+	to {
+		left: 0px;
+		opacity: 1;
+	}
+}
+@keyframes right {
+	from {
+		right: -50%;
+		opacity: 0;
+	}
+	to {
+		right: 0px;
+		opacity: 1;
+	}
+}
+@keyframes up {
+	0% {
+		top: -40px;
+		opacity: 0;
+	}
+	25% {
+		top: -30px;
+		opacity: 0.2;
+	}
+	50% {
+		top: -20px;
+		opacity: 0.4;
+	}
+	75% {
+		top: -10px;
+		opacity: 0.6;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+@keyframes down {
+	0% {
+		bottom: -40px;
+		opacity: 0;
+	}
+	25% {
+		bottom: -30px;
+		opacity: 0.2;
+	}
+	50% {
+		bottom: -20px;
+		opacity: 0.4;
+	}
+	75% {
+		bottom: -10px;
+		opacity: 0.6;
+	}
+	100% {
+		bottom: 0px;
+		opacity: 1;
+	}
+}
+@keyframes bounce {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 0 5px;
+	}
+}
+@keyframes fadeInSlide {
+	from {
+		opacity: 0.5;
+		right: -50px;
+	}
+
+	to {
+		opacity: 1;
+		right: 0px;
+	}
+}
+
+@keyframes fadeInShadow {
+	from {
+		opacity: 0;
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		box-shadow: 0px 18px 32px 3px rgba(0, 0, 0, 0.13);
+	}
+}
+@keyframes fadeIn {
+	from {
+		filter: brightness(30%) invert(0);
+	}
+
+	to {
+		filter: brightness(0) invert(1);
+	}
+}
+@keyframes servicesTypesBgAnimation {
+	from {
+		width: 318px;
+		height: 318px;
+		background-position: -30% 140%;
+	}
+
+	to {
+		width: 308px;
+		height: 308px;
+		background-position: 100% 0%;
+	}
+}
+@keyframes reverseServicesTypesBgAnimation {
+	from {
+		background-position: 100% 0%;
+		width: 308px;
+		height: 308px;
+	}
+
+	to {
+		background-position: -30% 140%;
+		width: 318px;
+		height: 318px;
+	}
+}
+@keyframes shrinkingVisionBox {
+	from {
+		width: 318px;
+		height: 226px;
+		background-position: 200% 0;
+	}
+	to {
+		width: 308px;
+		height: 218px;
+		background-position: 100% -15%;
+	}
+}
+@keyframes reverseShrinkingVisionBox {
+	from {
+		width: 308px;
+		height: 218px;
+		background-position: 100% -15%;
+	}
+	to {
+		width: 318px;
+		height: 226px;
+		background-position: 200% 0;
+	}
+}
+
+@keyframes accordionBody {
+	from {
+		opacity: 0;
+		padding: 0 68px;
+		max-height: 0;
+	}
+	to {
+		opacity: 1;
+		padding: 0 68px 78px;
+		max-height: 148px;
+	}
+}
+
+@keyframes reverseAccordionBody {
+	from {
+		opacity: 1;
+		padding: 0 68px 78px;
+		max-height: 148px;
+	}
+	to {
+		opacity: 0;
+		padding: 0 68px;
+		max-height: 0;
+	}
+}
+
+/** web-kit **/
+@-webkit-keyframes accordionBody {
+	from {
+		opacity: 0;
+		padding: 0 68px;
+		max-height: 0;
+	}
+	to {
+		opacity: 1;
+		padding: 0 68px 78px;
+		max-height: 148px;
+	}
+}
+
+@-webkit-keyframes reverseAccordionBody {
+	from {
+		opacity: 1;
+		padding: 0 68px 78px;
+		max-height: 148px;
+	}
+	to {
+		opacity: 0;
+		padding: 0 68px;
+		max-height: 0;
+	}
+}
+@-webkit-keyframes reverseShrinkingVisionBox {
+	from {
+		width: 308px;
+		height: 218px;
+		background-position: 100% -15%;
+	}
+	to {
+		width: 318px;
+		height: 226px;
+		background-position: 200% 0;
+	}
+}
+@-webkit-keyframes shrinkingVisionBox {
+	from {
+		width: 318px;
+		height: 226px;
+		background-position: 200% 0;
+	}
+	to {
+		width: 308px;
+		height: 218px;
+		background-position: 100% -15%;
+	}
+}
+@-webkit-keyframes reverseServicesTypesBgAnimation {
+	from {
+		background-position: 100% 0%;
+	}
+
+	to {
+		background-position: -30% 140%;
+	}
+}
+@-webkit-keyframes servicesTypesBgAnimation {
+	from {
+		background-position: -30% 140%;
+	}
+
+	to {
+		background-position: 100% 0%;
+	}
+}
+@-webkit-keyframes fadeIn {
+	from {
+		filter: brightness(30%) invert(0);
+	}
+
+	to {
+		filter: brightness(0) invert(1);
+	}
+}
+@-webkit-keyframes left {
+	from {
+		left: -50%;
+		opacity: 0;
+	}
+	to {
+		left: 0px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes right {
+	from {
+		right: -50%;
+		opacity: 0;
+	}
+	to {
+		right: 0px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes up {
+	0% {
+		top: -40px;
+		opacity: 0;
+	}
+	25% {
+		top: -30px;
+		opacity: 0.2;
+	}
+	50% {
+		top: -20px;
+		opacity: 0.4;
+	}
+	75% {
+		top: -10px;
+		opacity: 0.6;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes down {
+	0% {
+		bottom: -40px;
+		opacity: 0;
+	}
+	25% {
+		bottom: -30px;
+		opacity: 0.2;
+	}
+	50% {
+		bottom: -20px;
+		opacity: 0.4;
+	}
+	75% {
+		bottom: -10px;
+		opacity: 0.6;
+	}
+	100% {
+		bottom: 0px;
+		opacity: 1;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Poppins';
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 1400px) {
+	:root {
+	}
+}
+@media screen and (max-width: 950px) {
+	:root {
+	}
+}
+@media screen and (max-width: 720px) {
+	:root {
+	}
+}
