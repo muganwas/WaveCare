@@ -4,7 +4,17 @@
 	--Black: #383838;
 	--Grey: #808086;
 	--LGrey: #d9d9d9;
-	--White: #f5f7f8;
+	--White: #ffffff;
+	--Dark-Blue: #5d82a9;
+	--H1-Color: #30617a;
+	--Text-Color: #727272;
+	--Aqua: #01c0da;
+	/** Font size */
+	--nav-link: 16px;
+	--desc-1: 20px;
+	--H1-Font: 60px;
+	--H2-Font: 48px;
+	--H3-Font: 26px;
 }
 
 @keyframes fadeIn {

@@ -1,4 +1,68 @@
 nav {
+	display: flex;
+	flex-direction: column;
+	.logo-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		#logo {
+			display: flex;
+			width: 180px;
+			height: 77px;
+			margin: 20px;
+			background-image: url('../images/logo.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+	#links {
+		display: flex;
+		width: 100%;
+		padding: 15px 0 0px;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		background-color: var(--Dark-Blue);
+		.nav-link {
+			display: flex;
+			height: 54px;
+			margin-right: 40px;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 2px;
+			a {
+				display: inline-flex;
+				height: 100%;
+				justify-content: center;
+				align-items: center;
+				text-decoration: none;
+				color: var(--White);
+				font-family: Poppins;
+				font-size: var(--nav-link);
+				font-style: normal;
+				font-weight: 600;
+				line-height: 24px; /* 150% */
+				letter-spacing: 0.08px;
+			}
+			a.active {
+				border-bottom: 4px solid var(--White);
+			}
+		}
+		.nav-link.dropdown {
+			display: relative;
+			cursor: pointer;
+		}
+		.nav-link.dropdown::after {
+			content: '';
+			display: inline-flex;
+			width: 24px;
+			height: 24px;
+			background-image: url('../images/chevron_down.svg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
 	#hamburger {
 		display: none;
 	}
@@ -6,6 +70,15 @@ nav {
 
 @media screen and (max-width: 1880px) {
 	nav {
+		display: flex;
+		flex-direction: column;
+		#logo {
+			width: 180px;
+			height: 77px;
+			background-image: url('../images/logo.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
 	}
 }
 

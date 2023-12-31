@@ -1,6 +1,176 @@
 header {
+	#call-to-action {
+		display: flex;
+		padding: 0 0 234px 240px;
+		#cta-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			margin-right: 123px;
+			#cta-title {
+				color: var(--H1-Color);
+				font-family: Poppins;
+				font-size: var(--H1-Font);
+				font-style: normal;
+				font-weight: 600;
+				line-height: 68px;
+				letter-spacing: -0.3px;
+			}
+			#cta-desc {
+				color: var(--Text-Color);
+				font-family: Poppins;
+				font-size: var(--desc-1);
+				font-style: normal;
+				font-weight: 400;
+				line-height: 28px; /* 140% */
+				letter-spacing: 0.03px;
+				margin: 50px 0;
+			}
+			#cta-action {
+				#cta-action-text {
+					color: var(--White);
+					font-family: Poppins;
+					font-size: var(--nav-link);
+					font-style: normal;
+					font-weight: 600;
+					line-height: 24px;
+					letter-spacing: 0.08px;
+				}
+			}
+		}
+		#cta-img {
+			width: 945px;
+			height: 766px;
+			flex-shrink: 0;
+			background-image: url('../images/doctor_1.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-bottom-left-radius: 35%;
+		}
+	}
 }
 main {
+	#prod-cat {
+		display: flex;
+		box-sizing: border-box;
+		flex-direction: column;
+		margin: 0 241px;
+		border-radius: 15px;
+		background: var(--Dark-Blue);
+		padding: 40px;
+		#prod-cat-title {
+			color: var(--White);
+			font-family: Poppins;
+			font-size: var(--H2-Font);
+			font-style: normal;
+			font-weight: 600;
+			line-height: 52px; /* 108.333% */
+			text-transform: capitalize;
+		}
+		#cats {
+			display: flex;
+			padding: 30px 0 0 0;
+			.product {
+				display: flex;
+				flex: 1;
+				height: 280.969px;
+				padding: 30px 20px;
+				margin-right: 20px;
+				flex-direction: column;
+				align-items: center;
+				border-radius: 15px;
+				background: var(--White);
+				box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+				.product-title {
+					display: flex;
+					margin: 10px 0;
+					color: var(--H1-Color);
+					text-align: center;
+					font-family: Poppins;
+					font-size: var(--H3-Font);
+					font-style: normal;
+					font-weight: 600;
+					line-height: 36px;
+					text-transform: capitalize;
+				}
+				.product-desc {
+					color: var(--Text-Color);
+					text-align: center;
+					font-family: Poppins;
+					font-size: var(--nav-link);
+					font-style: normal;
+					font-weight: 400;
+					line-height: 24px;
+					letter-spacing: 0.08px;
+				}
+			}
+			:last-child {
+				margin-right: 0;
+			}
+			#med-treatment {
+				.product-illustration {
+					display: flex;
+					width: 93px;
+					height: 81px;
+					background-image: url('../images/med-treatment.svg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+			}
+			#ent {
+				.product-illustration {
+					display: flex;
+					width: 67.001px;
+					height: 84.485px;
+					background-image: url('../images/ent.svg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+			}
+			#animal-treatment {
+				.product-illustration {
+					display: flex;
+					width: 87px;
+					height: 85px;
+					background-image: url('../images/an-treatment.svg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+			}
+			#vitamins {
+				.product-illustration {
+					display: flex;
+					width: 67.001px;
+					height: 84.485px;
+					background-image: url('../images/ent.svg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+	.merch {
+		display: flex;
+		margin: 200px 241px;
+		.product-text {
+			display: flex;
+			flex-direction: column;
+		}
+		.product-illustration {
+		}
+	}
 }
 footer {
+}
+.green-button {
+	display: flex;
+	width: 91px;
+	height: 24px;
+	padding: 16px 32px;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 15px;
+	background: var(--Aqua);
 }
