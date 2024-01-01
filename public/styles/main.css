@@ -3,11 +3,12 @@
 :root {
 	--Black: #383838;
 	--Grey: #808086;
-	--LGrey: #d9d9d9;
+	--LGrey: #e5e5e5;
 	--White: #ffffff;
 	--Dark-Blue: #5d82a9;
 	--H1-Color: #30617a;
 	--Text-Color: #727272;
+	--Bold-Text: #454545;
 	--Aqua: #01c0da;
 	/** Font size */
 	--nav-link: 16px;
