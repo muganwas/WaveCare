@@ -1,0 +1,103 @@
+#testimonial-slider {
+	display: flex;
+	flex-direction: column;
+	#slider-title {
+		color: var(--H1-Color);
+		font-family: Poppins;
+		font-size: var(--H2-Font);
+		font-style: normal;
+		font-weight: 600;
+		line-height: 52px;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+	}
+	.testimonial-slides {
+		display: flex;
+		overflow: hidden;
+		position: relative;
+		.slide {
+			display: flex;
+			flex-direction: column;
+			opacity: 0;
+			position: absolute;
+			.testimonial-quote {
+				display: flex;
+				color: var(--Text-Color);
+				font-family: Poppins;
+				font-size: var(--nav-link);
+				font-style: normal;
+				font-weight: 400;
+				line-height: 24px;
+				letter-spacing: 0.08px;
+				margin-bottom: 30px;
+			}
+			.client-profile {
+				display: flex;
+				.client-profile-picture {
+					width: 80px;
+					height: 80px;
+					border-radius: 10px;
+					background: #d9d9d9;
+					margin-right: 17px;
+				}
+				.client-info {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 30px;
+					.client-name {
+						color: var(--Bold-Text);
+						text-align: center;
+						font-family: Poppins;
+						font-size: var(--desc-1);
+						font-style: normal;
+						font-weight: 600;
+						line-height: 24px;
+						letter-spacing: 0.03px;
+						text-transform: capitalize;
+						margin-bottom: 4px;
+					}
+					.client-address {
+						display: flex;
+						color: var(--Text-Color);
+						font-family: Poppins;
+						font-size: var(--sm-font);
+						font-style: normal;
+						font-weight: 400;
+						line-height: 20px;
+						letter-spacing: 0.035px;
+						margin-bottom: 4px;
+					}
+					.rating {
+						display: flex;
+					}
+				}
+			}
+		}
+		.slide.active {
+			opacity: 1;
+			position: relative;
+		}
+	}
+	#slider-nav {
+		display: flex;
+		#nav-left {
+			display: flex;
+			width: 32px;
+			height: 32px;
+			margin-right: 12px;
+			background-image: url('../images/back-arrow.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			cursor: pointer;
+		}
+		#nav-right {
+			display: flex;
+			width: 32px;
+			height: 32px;
+			background-image: url('../images/next-arrow.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			cursor: pointer;
+		}
+	}
+}

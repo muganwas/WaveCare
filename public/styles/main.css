@@ -1,9 +1,11 @@
 @import url('./nav.css');
 @import url('./home.css');
+@import url('./testimonial.css');
 :root {
 	--Black: #383838;
 	--Grey: #808086;
 	--LGrey: #e5e5e5;
+	--LLGrey: #f5f5f5;
 	--White: #ffffff;
 	--Dark-Blue: #5d82a9;
 	--H1-Color: #30617a;
@@ -11,6 +13,7 @@
 	--Bold-Text: #454545;
 	--Aqua: #01c0da;
 	/** Font size */
+	--sm-font: 14px;
 	--nav-link: 16px;
 	--desc-1: 20px;
 	--H1-Font: 60px;

@@ -243,6 +243,7 @@ main {
 		display: flex;
 		box-sizing: border-box;
 		padding: 70px 228px;
+		margin-bottom: 200px;
 		height: 477px;
 		justify-content: center;
 		align-items: center;
@@ -304,6 +305,26 @@ main {
 			background-repeat: no-repeat;
 		}
 	}
+	#testimonial {
+		display: flex;
+		position: relative;
+		box-sizing: border-box;
+		padding: 125px 240px 126px 240px;
+		justify-content: center;
+		align-items: center;
+		background: var(--LLGrey);
+		#testimonial-illustration {
+			width: 490px;
+			height: 490px;
+			margin-right: 130px;
+			flex-shrink: 0;
+			border-radius: 40px;
+			background-color: var(--Aqua);
+			background-image: url('../images/vet-xray.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
 }
 footer {
 }
@@ -328,4 +349,12 @@ footer {
 	cursor: pointer;
 	border-radius: 15px;
 	background: var(--White);
+}
+.star {
+	display: flex;
+	width: 20px;
+	height: 20px;
+	background-image: url('../images/star-rating.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
