@@ -50,6 +50,7 @@ header {
 		}
 	}
 }
+/** Home **/
 main {
 	#prod-cat {
 		display: flex;
@@ -327,6 +328,94 @@ main {
 		}
 	}
 }
+/** About **/
+main#about-main {
+	display: flex;
+	flex-direction: column;
+	padding: 200px 240px;
+	.page-title {
+		color: var(--Dark-Blue);
+		font-family: Poppins;
+		font-size: var(--Page-title);
+		font-style: normal;
+		font-weight: 600;
+		line-height: 68px; /* 85% */
+		letter-spacing: -0.4px;
+	}
+	.about-section {
+		display: flex;
+		box-sizing: border-box;
+		margin-top: 100px;
+		.section-image-container {
+			#about-img {
+				display: flex;
+				width: 610.355px;
+				height: 584.968px;
+				flex-shrink: 0;
+				background-image: url('../images/vet-xray.png');
+				background-size: 70%;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-color: var(--Gray-Scale-5);
+				mask: url('../images/about-mask-1.svg');
+				mask-repeat: no-repeat;
+				mask-position: center;
+			}
+			#network-img {
+				display: flex;
+				width: 610.355px;
+				height: 584.968px;
+				flex-shrink: 0;
+				background-image: url('../images/vet-xray.png');
+				background-size: 70%;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-color: var(--Gray-Scale-5);
+				mask: url('../images/about-mask-2.svg');
+				mask-repeat: no-repeat;
+				mask-position: center;
+			}
+		}
+		.section-text-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.section-text-title {
+				display: inline-flex;
+				margin-bottom: 30px;
+				color: var(--H1-Color);
+				font-size: var(--H2-Font);
+				font-style: normal;
+				font-weight: 600;
+				line-height: 52px; /* 108.333% */
+				text-transform: capitalize;
+			}
+			.section-text-desc {
+				color: var(--Text-Color);
+				text-align: justify;
+				font-size: var(--navigation);
+				font-style: normal;
+				font-weight: 400;
+				line-height: 24px; /* 150% */
+				letter-spacing: 0.08px;
+			}
+		}
+	}
+
+	.left-space {
+		flex-direction: row;
+		.section-text-container {
+			margin-left: 150px;
+		}
+	}
+	.right-space {
+		flex-direction: row-reverse;
+		.section-text-container {
+			margin-right: 150px;
+		}
+	}
+}
+
 footer {
 	display: flex;
 	box-sizing: border-box;
