@@ -31,7 +31,7 @@ header {
 				#cta-action-text {
 					color: var(--White);
 					font-family: Poppins;
-					font-size: var(--nav-link);
+					font-size: var(--navigation);
 					font-style: normal;
 					font-weight: 600;
 					line-height: 24px;
@@ -98,7 +98,7 @@ main {
 					color: var(--Text-Color);
 					text-align: center;
 					font-family: Poppins;
-					font-size: var(--nav-link);
+					font-size: var(--navigation);
 					font-style: normal;
 					font-weight: 400;
 					line-height: 24px;
@@ -177,7 +177,7 @@ main {
 				display: flex;
 				color: var(--Text-Color);
 				font-family: Poppins;
-				font-size: var(--nav-link);
+				font-size: var(--navigation);
 				font-style: normal;
 				font-weight: 400;
 				line-height: 24px;
@@ -193,7 +193,7 @@ main {
 					margin-bottom: 15px;
 					color: var(--Bold-Text);
 					font-family: Poppins;
-					font-size: var(--nav-link);
+					font-size: var(--navigation);
 					font-style: normal;
 					font-weight: 500;
 					line-height: 24px;
@@ -212,7 +212,7 @@ main {
 				.learn-more-text {
 					color: var(--White);
 					font-family: Poppins;
-					font-size: var(--nav-link);
+					font-size: var(--navigation);
 					font-style: normal;
 					font-weight: 600;
 					line-height: 24px;
@@ -269,7 +269,7 @@ main {
 				box-sizing: border-box;
 				color: var(--White);
 				font-family: Poppins;
-				font-size: var(--nav-link);
+				font-size: var(--navigation);
 				font-style: normal;
 				font-weight: 400;
 				line-height: 24px;
@@ -283,7 +283,7 @@ main {
 				#book-now-text {
 					color: var(--Aqua);
 					font-family: Poppins;
-					font-size: var(--nav-link);
+					font-size: var(--navigation);
 					font-style: normal;
 					font-weight: 600;
 					line-height: 24px;
@@ -375,9 +375,8 @@ footer {
 	}
 	#footer-links {
 		display: flex;
-		margin-top: 100px;
 		justify-content: space-between;
-		margin: 0 240px 143px;
+		margin: 0 240px 135px;
 		.category {
 			display: flex;
 			max-width: 375px;
@@ -431,7 +430,7 @@ footer {
 				display: flex;
 				color: var(--White);
 				font-family: Poppins;
-				font-size: var(--nav-link);
+				font-size: var(--navigation);
 				font-style: normal;
 				font-weight: 400;
 				line-height: 24px; /* 150% */
@@ -459,7 +458,7 @@ footer {
 		#copy-text {
 			color: var(--White);
 			font-family: Poppins;
-			font-size: var(--nav-link);
+			font-size: var(--navigation);
 			font-style: normal;
 			font-weight: 400;
 			line-height: 24px;
@@ -471,7 +470,7 @@ footer {
 				margin-right: 20px;
 				color: var(--White);
 				font-family: Poppins;
-				font-size: var(--nav-link);
+				font-size: var(--navigation);
 				font-style: normal;
 				font-weight: 400;
 				line-height: 24px;

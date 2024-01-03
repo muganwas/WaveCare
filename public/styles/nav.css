@@ -23,7 +23,7 @@ nav {
 		align-items: center;
 		gap: 40px;
 		background-color: var(--Dark-Blue);
-		.nav-link {
+		.navigation {
 			display: flex;
 			height: 54px;
 			margin-right: 40px;
@@ -38,7 +38,7 @@ nav {
 				text-decoration: none;
 				color: var(--White);
 				font-family: Poppins;
-				font-size: var(--nav-link);
+				font-size: var(--navigation);
 				font-style: normal;
 				font-weight: 600;
 				line-height: 24px; /* 150% */
@@ -48,11 +48,11 @@ nav {
 				border-bottom: 4px solid var(--White);
 			}
 		}
-		.nav-link.dropdown {
+		.navigation.dropdown {
 			display: relative;
 			cursor: pointer;
 		}
-		.nav-link.dropdown::after {
+		.navigation.dropdown::after {
 			content: '';
 			display: inline-flex;
 			width: 24px;
