@@ -6,11 +6,11 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <title>Wave Care</title>
     <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
     <script type="text/javascript">
         if (location.protocol === 'http:') {//only livereload on insecure connections
             document.write('<script src="' + location.protocol + '//' + (location.host || 'localhost').split(':')[0] +
@@ -24,23 +24,23 @@
         <a href="/" class="hidden-link logo-container"><span id="logo"></span></a>
         <div id="links">
             <span class="navigation">
-                <a id="home" href="index.html" class="nav-link active">Home</a>
+                <a id="home" href="../index.html" class="nav-link active">Home</a>
             </span>
             <span class="navigation dropdown">
-                <a id="products" class="nav-link" href="Products.html">Products</a>
+                <a id="products" class="nav-link" href="../Products-Categories.html">Products</a>
                 <div class="sub-navigation">
-                    <a class="product">Product 1</a>
-                    <a class="product">Product 2</a>
-                    <a class="product">Product 3</a>
-                    <a class="product">Product 4</a>
-                    <a class="product">Product 5</a>
+                    <a href="products/Products.html" class="product">Product 1</a>
+                    <a href="products/Products.html?pro=2" class="product">Product 2</a>
+                    <a href="products/Products.html?pro=3" class="product">Product 3</a>
+                    <a href="products/Products.html?pro=4" class="product">Product 4</a>
+                    <a href="products/Products.html?pro=5" class="product">Product 5</a>
                 </div>
             </span>
             <span class="navigation">
-                <a id="about" class="nav-link" href="About.html">About Us</a>
+                <a id="about" class="nav-link" href="../About.html">About Us</a>
             </span>
             <span class="navigation">
-                <a id="contact" class="nav-link" href="Contact.html">Contact</a>
+                <a id="contact" class="nav-link" href="../Contact.html">Contact</a>
             </span>
         </div>
         <div id="hamburger">
@@ -50,59 +50,56 @@
         </div>
     </nav>
     <main id="products-main">
-        <span class="page-title">Product Categories</span>
-        <div id="product-categories">
-            <div id="prod-1" class="product-category">
-                <span class="product-category-illustration"></span>
-                <div class="product-category-text">
-                    <span class="category-title">Quibinos Natural Gel 100 ml</span>
-                    <span class="category-desc">
-                        Lorem ipsum dolor sit amet consectetur. Maecenas lectus proin a massa auctor urna. Ornare
-                        blandit volutpat non arcu
-                        tincidunt neque id consectetur ut. Nec ante gravida cursus eget lobortis. Lorem tempus sapien
-                        tempor in eget. Blandit
-                        volutpat at integer eget tristique ut diam. Mattis volutpat augue vulputate purus.
+        <span class="page-title">Products</span>
+        <div id="product-list">
+            <div id="pagination-container">
+                <span id="pagination">Showing 1-12 of 90 results</span>
+                <div id="sorting">
+                    <span id="selected-sorting">Default Sorting</span>
+                    <span id="sorting-types">
+                        <span id="default-sorting">Default Sorting</span>
+                        <span id="asc-date-sorting">Date Asc</span>
+                        <span id="desc-date-sorting">Date Desc</span>
                     </span>
                 </div>
             </div>
-            <div id="prod-2" class="product-category">
-                <span class="product-category-illustration"></span>
-                <div class="product-category-text">
-                    <span class="category-title">Quibinos Natural Gel 100 ml</span>
-                    <span class="category-desc">
-                        Lorem ipsum dolor sit amet consectetur. Maecenas lectus proin a massa auctor urna. Ornare
-                        blandit volutpat non arcu
-                        tincidunt neque id consectetur ut. Nec ante gravida cursus eget lobortis. Lorem tempus sapien
-                        tempor in eget. Blandit
-                        volutpat at integer eget tristique ut diam. Mattis volutpat augue vulputate purus.
-                    </span>
-                </div>
-            </div>
-            <div id="prod-3" class="product-category">
-                <span class="product-category-illustration"></span>
-                <div class="product-category-text">
-                    <span class="category-title">Quibinos Natural Gel 100 ml</span>
-                    <span class="category-desc">
-                        Lorem ipsum dolor sit amet consectetur. Maecenas lectus proin a massa auctor urna. Ornare
-                        blandit volutpat non arcu
-                        tincidunt neque id consectetur ut. Nec ante gravida cursus eget lobortis. Lorem tempus sapien
-                        tempor in eget. Blandit
-                        volutpat at integer eget tristique ut diam. Mattis volutpat augue vulputate purus.
-                    </span>
-                </div>
-            </div>
-            <div id="prod-3" class="product-category">
-                <span class="product-category-illustration"></span>
-                <div class="product-category-text">
-                    <span class="category-title">Quibinos Natural Gel 100 ml</span>
-                    <span class="category-desc">
-                        Lorem ipsum dolor sit amet consectetur. Maecenas lectus proin a massa auctor urna. Ornare
-                        blandit volutpat non arcu
-                        tincidunt neque id consectetur ut. Nec ante gravida cursus eget lobortis. Lorem tempus sapien
-                        tempor in eget. Blandit
-                        volutpat at integer eget tristique ut diam. Mattis volutpat augue vulputate purus.
-                    </span>
-                </div>
+            <div id="products">
+                <span id="prod-1" class="product-item">
+                    <img id="prod-1-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
+                <span id="prod-2" class="product-item">
+                    <img id="prod-2-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
+                <span id="prod-3" class="product-item">
+                    <img id="prod-3-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
+                <span id="prod-4" class="product-item">
+                    <img id="prod-4-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
+                <span id="prod-5" class="product-item">
+                    <img id="prod-5-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
+                <span id="prod-6" class="product-item">
+                    <img id="prod-6-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
+                <span id="prod-7" class="product-item">
+                    <img id="prod-7-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
+                <span id="prod-8" class="product-item">
+                    <img id="prod-8-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
+                <span id="prod-9" class="product-item">
+                    <img id="prod-9-img" src="../images/diclo.jpeg" class="product-image" />
+                    <span class="product-name">Diclofenac Oaifarm Tablet</span>
+                </span>
             </div>
         </div>
     </main>
@@ -177,8 +174,8 @@
             </span>
         </div>
     </footer>
-    <script type="text/JavaScript" src="./scripts/main.js"></script>
-    <script type="text/JavaScript" src="./scripts/animations.js"></script>
+    <script type="text/JavaScript" src="../scripts/main.js"></script>
+    <script type="text/JavaScript" src="../scripts/animations.js"></script>
 </body>
 
 </html>

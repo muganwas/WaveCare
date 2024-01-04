@@ -16,7 +16,7 @@
     const navLinks = doc.getElementsByClassName('nav-link');
     const loc = win.location.pathname;
 
-    if (loc.includes('Products')) {
+    if (loc.includes('Product')) {
         Array.from(navLinks).forEach(l => {
             l.classList.remove('active');
         });
