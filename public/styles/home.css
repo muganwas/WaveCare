@@ -664,6 +664,9 @@ main#products-main {
 						rgba(0, 0, 0, 0.04) 100%
 					)
 				);
+				a {
+					text-decoration: none;
+				}
 				.product-image {
 					display: flex;
 					width: 338px;
@@ -692,6 +695,13 @@ main#products-main {
 			}
 		}
 	}
+}
+
+/** Products **/
+main#product-main {
+	display: flex;
+	flex-direction: column;
+	padding: 196px 240px;
 }
 
 footer {
