@@ -35,5 +35,22 @@
         contactLink.classList.add('active');
     }
 
+    /** Product Tabs */
+
+    const tabs = doc.getElementsByClassName('tab');
+    const sections = doc.getElementsByClassName('section');
+    Array.from(tabs).forEach(t => {
+        t.addEventListener('click', (e) => {
+            e.preventDefault();
+            const tId = e.target.id;
+            const sectionId = tId + '-sect';
+            const currentSection = doc.getElementById(sectionId);
+            Array.from(tabs).forEach(t => t.classList.remove('active'));
+            t.classList.add('active');
+            Array.from(sections).forEach(s => s.classList.remove('active'));
+            currentSection.classList.add('active');
+        });
+    })
+
 
 })(window, document);
