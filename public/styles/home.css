@@ -71,43 +71,45 @@ main {
 		}
 		#cats {
 			display: flex;
-			padding: 30px 0 0 0;
-			.product {
+			flex-wrap: wrap;
+			/* padding: 30px 0 0 0; */
+			.product-container {
 				display: flex;
 				flex: 1;
-				height: 280.969px;
-				padding: 30px 20px;
-				margin-right: 20px;
-				flex-direction: column;
-				align-items: center;
-				border-radius: 15px;
-				background: var(--White);
-				box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-				.product-title {
+				height: auto;
+				padding: 0;
+				margin: 20px;
+				.product {
 					display: flex;
-					margin: 10px 0;
-					color: var(--H1-Color);
-					text-align: center;
-					font-family: Poppins;
-					font-size: var(--H3-Font);
-					font-style: normal;
-					font-weight: 600;
-					line-height: 36px;
-					text-transform: capitalize;
+					padding: 30px 20px;
+					flex-direction: column;
+					align-items: center;
+					border-radius: 15px;
+					background: var(--White);
+					box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+					.product-title {
+						display: flex;
+						margin: 10px 0;
+						color: var(--H1-Color);
+						text-align: center;
+						font-family: Poppins;
+						font-size: var(--H3-Font);
+						font-style: normal;
+						font-weight: 600;
+						line-height: 36px;
+						text-transform: capitalize;
+					}
+					.product-desc {
+						color: var(--Text-Color);
+						text-align: center;
+						font-family: Poppins;
+						font-size: var(--navigation);
+						font-style: normal;
+						font-weight: 400;
+						line-height: 24px;
+						letter-spacing: 0.08px;
+					}
 				}
-				.product-desc {
-					color: var(--Text-Color);
-					text-align: center;
-					font-family: Poppins;
-					font-size: var(--navigation);
-					font-style: normal;
-					font-weight: 400;
-					line-height: 24px;
-					letter-spacing: 0.08px;
-				}
-			}
-			:last-child {
-				margin-right: 0;
 			}
 			#med-treatment {
 				.product-illustration {
@@ -231,6 +233,9 @@ main {
 			background-size: contain;
 			background-repeat: no-repeat;
 		}
+		.merch-mobi-illustration {
+			display: none;
+		}
 	}
 	#product-2 {
 		display: flex;
@@ -251,6 +256,7 @@ main {
 		background: var(--Dark-Blue);
 		#book-text {
 			display: flex;
+			flex: 1;
 			box-sizing: border-box;
 			flex-direction: column;
 			#book-title {
@@ -277,6 +283,9 @@ main {
 				letter-spacing: 0.08px;
 				margin-bottom: 30px;
 			}
+			#book-vid-mobi {
+				display: none;
+			}
 			#book-now-button {
 				box-sizing: border-box;
 				width: 156px;
@@ -294,11 +303,11 @@ main {
 			}
 		}
 		#book-vid {
+			display: flex;
 			cursor: pointer;
-			width: 704.676px;
+			flex: 1;
 			height: 337px;
 			margin-left: 30px;
-			flex-shrink: 0;
 			border-radius: 15px;
 			background-color: var(--LGrey);
 			background-image: url('../images/play.svg');
@@ -951,7 +960,7 @@ footer {
 	flex-direction: column;
 	background-image: url('../images/footer-bg.png');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	#footer-graphics {
 		display: flex;
 		box-sizing: border-box;
@@ -1098,6 +1107,7 @@ footer {
 		}
 	}
 }
+
 .green-button {
 	display: inline-flex;
 	min-width: 91px;
@@ -1127,4 +1137,274 @@ footer {
 	background-image: url('../images/star-rating.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+@media screen and (max-width: 1890px) {
+	main {
+		#book-section {
+			height: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 1580px) {
+	header {
+		#call-to-action {
+			display: flex;
+			position: relative;
+			padding: 0 0 234px 10%;
+			#cta-text {
+				position: relative;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				height: 766px;
+				margin-right: 5%;
+				#cta-title {
+					color: var(--H1-Color);
+					font-family: Poppins;
+					font-size: var(--H1-Font);
+					font-style: normal;
+					font-weight: 600;
+					line-height: 68px;
+					letter-spacing: -0.3px;
+				}
+				#cta-desc {
+					color: var(--Text-Color);
+					font-family: Poppins;
+					font-size: var(--desc-1);
+					font-style: normal;
+					font-weight: 400;
+					line-height: 28px; /* 140% */
+					letter-spacing: 0.03px;
+					margin: 50px 0;
+				}
+				#cta-action {
+					#cta-action-text {
+						color: var(--White);
+						font-family: Poppins;
+						font-size: var(--navigation);
+						font-style: normal;
+						font-weight: 600;
+						line-height: 24px;
+						letter-spacing: 0.08px;
+					}
+				}
+			}
+			#cta-img {
+				position: absolute;
+				z-index: -1;
+				opacity: 0.5;
+				width: 100%;
+				left: 0;
+				right: 0;
+				height: 766px;
+				flex-shrink: 0;
+				background-image: url('../images/doctor_1.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: top center;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+	main {
+		#prod-cat {
+			margin: 0 10%;
+		}
+		.merch {
+			margin: 200px 10%;
+		}
+		#book-section {
+			padding: 70px 9%;
+		}
+		#testimonial {
+			padding: 125px 10% 126px;
+		}
+	}
+	footer {
+		#footer-graphics {
+			margin: 30px 10% 100px;
+		}
+		#footer-links {
+			margin: 0 10% 135px;
+		}
+		#copyright {
+			padding: 30px 10%;
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	main {
+		.merch {
+			margin: 200px 10%;
+			.product-text {
+				flex: 1;
+				margin-right: 10%;
+			}
+			.product-illustration {
+				flex: 1;
+				width: auto;
+				background-position: center;
+			}
+		}
+		#product-2 {
+			.product-text {
+				margin-left: 10%;
+			}
+		}
+		#book-section {
+			height: auto;
+			#book-text {
+				flex: 1;
+			}
+			#book-vid {
+				flex: 2;
+				width: auto;
+			}
+		}
+		#testimonial {
+			#testimonial-slider {
+				flex: 1;
+			}
+			#testimonial-illustration {
+				display: flex;
+				flex: 1;
+				width: auto;
+				margin-right: 10%;
+				background-size: contain;
+				background-position: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	header {
+		#call-to-action {
+			display: flex;
+			position: relative;
+			align-items: center;
+			text-align: center;
+			padding: 0 10% 234px 10%;
+			#cta-text {
+				margin: 0;
+				height: 366px;
+				align-items: center;
+				text-align: center;
+				#cta-title {
+					color: var(--H1-Color);
+					font-family: Poppins;
+					font-size: var(--H1-Font);
+					font-style: normal;
+					font-weight: 600;
+					line-height: 68px;
+					letter-spacing: -0.3px;
+				}
+				#cta-desc {
+					color: var(--Text-Color);
+					font-family: Poppins;
+					font-size: var(--desc-1);
+					font-style: normal;
+					font-weight: 400;
+					line-height: 28px; /* 140% */
+					letter-spacing: 0.03px;
+					margin: 50px 0;
+				}
+				#cta-action {
+					position: absolute;
+					bottom: -100px;
+					#cta-action-text {
+						color: var(--White);
+						font-family: Poppins;
+						font-size: var(--navigation);
+						font-style: normal;
+						font-weight: 600;
+						line-height: 24px;
+						letter-spacing: 0.08px;
+					}
+				}
+			}
+			#cta-img {
+				position: absolute;
+				z-index: -1;
+				opacity: 0.5;
+				width: 100%;
+				left: 0;
+				right: 0;
+				height: 366px;
+				flex-shrink: 0;
+				background-image: url('../images/doctor_1.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: top center;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+	main {
+		.merch {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.product-text {
+				text-align: center;
+				list-style-position: inside;
+				align-items: center;
+				margin: 0;
+				.product-title {
+				}
+				.product-desc {
+				}
+				.product-pros {
+					-webkit-padding-start: 0;
+					padding-inline-start: 0;
+				}
+				.product-learn-more {
+					width: 164px;
+				}
+			}
+			.product-illustration {
+				display: none;
+			}
+			.merch-mobi-illustration {
+				display: flex;
+				width: 100%;
+				height: 314px;
+				background-image: url('../images/vet-xray.png');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+		#product-2 {
+			.product-text {
+				margin-left: 0;
+			}
+		}
+		#book-section {
+			flex-direction: column;
+			height: auto;
+			#book-text {
+				flex: 1;
+				align-items: center;
+				#book-vid-mobi {
+					display: flex;
+					cursor: pointer;
+					width: 100%;
+					height: 184px;
+					margin: 0 0 30px 0;
+					border-radius: 15px;
+					background-color: var(--LGrey);
+					background-image: url('../images/play.svg');
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+			}
+			#book-vid {
+				display: none;
+			}
+		}
+	}
 }

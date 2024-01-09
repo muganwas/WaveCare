@@ -21,7 +21,6 @@ nav {
 		padding: 15px 0 0px;
 		justify-content: center;
 		align-items: center;
-		gap: 40px;
 		background-color: var(--Dark-Blue);
 		.navigation {
 			display: flex;
@@ -103,6 +102,62 @@ nav {
 
 @media screen and (max-width: 1140px) {
 	nav {
+	}
+}
+
+@media screen and (max-width: 980px) {
+	nav {
+		position: relative;
+		.logo-container {
+			display: flex;
+			position: absolute;
+			top: 20px;
+			left: 35px;
+			#logo {
+				display: flex;
+				width: 180px;
+				height: 77px;
+				margin: 0;
+				background-image: url('../images/logo.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+		}
+		#links {
+			display: none;
+			flex-direction: column;
+			align-items: center;
+			position: absolute;
+			top: 117px;
+			z-index: 100;
+			.navigation {
+				display: flex;
+				height: 49px;
+				margin-right: 0;
+				justify-content: center;
+				align-items: center;
+				padding-bottom: 2px;
+			}
+			.navigation.dropdown:after {
+				content: none;
+			}
+		}
+		#hamburger {
+			display: flex;
+			position: absolute;
+			width: 30px;
+			height: 34px;
+			top: 40px;
+			right: 58px;
+			flex-shrink: 0;
+			background-image: url('../images/hamburger.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+	}
+	header {
+		margin-top: 117px;
 	}
 }
 
