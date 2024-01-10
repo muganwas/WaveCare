@@ -665,6 +665,7 @@ main#products-main {
 				display: flex;
 				box-sizing: border-box;
 				flex-direction: column;
+				margin: auto;
 				align-items: center;
 				border-radius: 15px;
 				border-radius: 15px;
@@ -1265,6 +1266,22 @@ footer {
 		flex-direction: column;
 		padding: 200px 10%;
 	}
+	/** Products **/
+	main#products-main {
+		display: flex;
+		flex-direction: column;
+		padding: 200px 0;
+		.page-title {
+			display: inline-flex;
+			margin: 0 10%;
+		}
+		#product-list {
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+			margin: 138px 20% 0;
+		}
+	}
 	footer {
 		#footer-graphics {
 			margin: 30px 10% 100px;
@@ -1319,6 +1336,22 @@ footer {
 				background-size: contain;
 				background-position: center;
 			}
+		}
+	}
+	/** Products **/
+	main#products-main {
+		display: flex;
+		flex-direction: column;
+		padding: 200px 0;
+		.page-title {
+			display: inline-flex;
+			margin: 0 5%;
+		}
+		#product-list {
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+			margin: 138px 10% 0;
 		}
 	}
 }
@@ -1786,6 +1819,73 @@ footer {
 			:last-child {
 				padding-bottom: 0;
 				border-bottom: none;
+			}
+		}
+	}
+	/** Products **/
+	main#products-main {
+		display: flex;
+		flex-direction: column;
+		padding: 150px 0;
+		.page-title {
+			display: inline-flex;
+			margin: 0 5%;
+		}
+		#product-list {
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+			margin: 138px 10% 0;
+			#products {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.product-item {
+					display: flex;
+					box-sizing: border-box;
+					flex-direction: column;
+					margin: auto;
+					align-items: center;
+					border-radius: 15px;
+					border-radius: 15px;
+					margin-top: 30px;
+					background: var(
+						--LLGrey,
+						linear-gradient(
+							0deg,
+							rgba(0, 0, 0, 0.04) 0%,
+							rgba(0, 0, 0, 0.04) 100%
+						)
+					);
+					a {
+						text-decoration: none;
+					}
+					.product-image {
+						display: flex;
+						width: 100%;
+						height: 339px;
+						border-top-left-radius: 15px;
+						border-top-right-radius: 15px;
+						background-color: var(--LGrey);
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					.product-name {
+						display: flex;
+						width: 100%;
+						box-sizing: border-box;
+						color: var(--Dark-Blue);
+						text-align: center;
+						justify-content: center;
+						font-family: Poppins;
+						font-size: 24px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 24px; /* 100% */
+						letter-spacing: 0.12px;
+						padding: 16px 0 24px;
+					}
+				}
 			}
 		}
 	}

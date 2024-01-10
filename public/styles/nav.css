@@ -142,6 +142,10 @@ nav {
 			.navigation.dropdown:after {
 				content: none;
 			}
+			.navigation.dropdown:hover > .sub-navigation {
+				display: none;
+				justify-content: space-between;
+			}
 		}
 		#hamburger {
 			display: flex;
