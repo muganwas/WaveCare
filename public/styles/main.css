@@ -373,7 +373,25 @@ body {
 	:root {
 	}
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
 	:root {
+		--desc-1: 16px;
+		--Page-title: 60px;
+		--H1-Font: 45px;
+		--sm-font: 12px;
+		--navigation: 14px;
+		--H2-Font: 30px;
+		--H3-Font: 20px;
+	}
+}
+@media screen and (max-width: 480px) {
+	:root {
+		--desc-1: 14px;
+		--Page-title: 50px;
+		--H1-Font: 35px;
+		--sm-font: 10px;
+		--navigation: 12px;
+		--H2-Font: 26px;
+		--H3-Font: 16px;
 	}
 }

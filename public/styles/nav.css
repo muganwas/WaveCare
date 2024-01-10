@@ -108,6 +108,7 @@ nav {
 @media screen and (max-width: 980px) {
 	nav {
 		position: relative;
+		border: thin solid #ffffff;
 		.logo-container {
 			display: flex;
 			position: absolute;

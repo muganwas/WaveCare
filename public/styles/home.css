@@ -1344,6 +1344,11 @@ footer {
 		}
 	}
 	main {
+		#prod-cat {
+			#prod-cat-title {
+				text-align: center;
+			}
+		}
 		.merch {
 			display: flex;
 			flex-direction: column;
@@ -1354,6 +1359,7 @@ footer {
 				align-items: center;
 				margin: 0;
 				.product-title {
+					text-align: center;
 				}
 				.product-desc {
 				}
@@ -1389,6 +1395,12 @@ footer {
 			#book-text {
 				flex: 1;
 				align-items: center;
+				#book-title {
+					text-align: center;
+				}
+				#book-desc {
+					text-align: center;
+				}
 				#book-vid-mobi {
 					display: flex;
 					cursor: pointer;
@@ -1405,6 +1417,134 @@ footer {
 			#book-vid {
 				display: none;
 			}
+		}
+		#testimonial {
+			display: flex;
+			flex-direction: column;
+			#testimonial-illustration {
+				display: none;
+			}
+		}
+	}
+	footer {
+		#footer-graphics {
+			margin: 30px 10% 100px;
+		}
+		#footer-links {
+			margin: 0 10% 135px;
+			justify-content: center;
+			#cat-1,
+			#cat-2 {
+				display: none;
+			}
+			#cat-3 {
+				display: flex;
+				align-items: center;
+			}
+		}
+		#copyright {
+			padding: 30px 10%;
+			flex-direction: column;
+			align-items: center;
+			#copy-text {
+				margin-bottom: 10px;
+			}
+			#copy-links {
+				display: flex;
+			}
+		}
+	}
+}
+@media screen and (max-width: 780px) {
+	footer {
+		background-image: url('../images/footer-bg-mobi.png');
+		background-position: center -100px;
+		#footer-graphics {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			#footer-socials {
+				margin-top: 50px;
+				.icon {
+					width: 50px;
+					height: 50px;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	header {
+		#call-to-action {
+			#cta-text {
+				#cta-title {
+				}
+				#cta-desc {
+					margin: 20px 0;
+				}
+			}
+		}
+	}
+	footer {
+		background-position: center -60px;
+	}
+}
+@media screen and (max-width: 480px) {
+	main {
+		#prod-cat {
+			margin: 0 5%;
+		}
+		#book-section {
+			padding: 70px 4%;
+		}
+		.merch {
+			margin: 100px 5%;
+			.product-text {
+				flex: 1;
+				margin-right: 5%;
+			}
+			.product-illustration {
+				flex: 1;
+				width: auto;
+				background-position: center;
+			}
+		}
+		#product-2 {
+			.product-text {
+				margin-left: 5%;
+			}
+		}
+		#testimonial {
+			padding: 125px 5% 126px;
+			#testimonial-illustration {
+				display: flex;
+				flex: 1;
+				width: auto;
+				margin-right: 5%;
+				background-size: contain;
+				background-position: center;
+			}
+		}
+	}
+	footer {
+		#footer-graphics {
+			margin: 30px 5% 100px;
+		}
+		#footer-links {
+			margin: 0 5% 135px;
+			justify-content: center;
+			#cat-1,
+			#cat-2 {
+				display: none;
+			}
+			#cat-3 {
+				display: flex;
+				align-items: center;
+			}
+		}
+		#copyright {
+			padding: 30px 5%;
 		}
 	}
 }

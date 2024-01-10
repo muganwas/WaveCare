@@ -101,3 +101,22 @@
 		}
 	}
 }
+@media screen and (max-width: 980px) {
+	#testimonial-slider {
+		#slider-title {
+			text-align: center;
+		}
+		.testimonial-slides {
+			justify-content: center;
+			.slide {
+				align-items: center;
+				.testimonial-quote {
+					text-align: center;
+				}
+			}
+		}
+		#slider-nav {
+			justify-content: center;
+		}
+	}
+}
