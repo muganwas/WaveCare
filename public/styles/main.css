@@ -9,7 +9,7 @@
 	--Gray-Scale-5: #d9d9d9;
 	--White: #ffffff;
 	--Dark-Blue: #5d82a9;
-	--H1-Color: #30617a;
+	--H1-Color: #262626;
 	--Text-Color: #727272;
 	--Bold-Text: #454545;
 	--Aqua: #01c0da;
@@ -17,7 +17,7 @@
 	--sm-font: 14px;
 	--navigation: 16px;
 	--desc-1: 20px;
-	--Page-title: 80px;
+	--Page-title: 32px;
 	--H1-Font: 60px;
 	--H2-Font: 48px;
 	--H3-Font: 26px;
@@ -376,7 +376,7 @@ body {
 @media screen and (max-width: 780px) {
 	:root {
 		--desc-1: 16px;
-		--Page-title: 60px;
+		--Page-title: 30px;
 		--H1-Font: 45px;
 		--sm-font: 12px;
 		--navigation: 14px;
@@ -387,7 +387,7 @@ body {
 @media screen and (max-width: 480px) {
 	:root {
 		--desc-1: 14px;
-		--Page-title: 50px;
+		--Page-title: 28px;
 		--H1-Font: 35px;
 		--sm-font: 10px;
 		--navigation: 12px;
