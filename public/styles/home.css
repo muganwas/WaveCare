@@ -1033,22 +1033,22 @@ footer {
 				display: flex;
 				width: 80px;
 				height: 80px;
-				background-size: cover;
+				background-size: contain;
 				background-repeat: no-repeat;
 				margin-right: 18px;
 				cursor: pointer;
 			}
 			.facebook {
-				background-image: url('../images/facebook.svg');
+				background-image: url('../images/facebook_white.svg');
 			}
 			.instagram {
-				background-image: url('../images/instagram.svg');
+				background-image: url('../images/insta_white.svg');
 			}
 			.youtube {
-				background-image: url('../images/youtube.svg');
+				background-image: url('../images/youtube_white.svg');
 			}
 			.twitter {
-				background-image: url('../images/twitter.svg');
+				background-image: url('../images/twitter_white.svg');
 			}
 		}
 	}
@@ -1981,9 +1981,26 @@ footer {
 			#footer-socials {
 				margin-top: 50px;
 				.icon {
+					display: flex;
+					flex: 1;
+					background-position: center;
+					background-size: 80%;
 					width: 50px;
 					height: 50px;
 					margin-right: 15px;
+				}
+
+				.facebook {
+					background-image: url('../images/facebook_mobi.svg');
+				}
+				.instagram {
+					background-image: url('../images/insta_mobi.svg');
+				}
+				.youtube {
+					background-image: url('../images/youtube_mobi.svg');
+				}
+				.twitter {
+					background-image: url('../images/twitter_mobi.svg');
 				}
 			}
 		}
@@ -2157,24 +2174,11 @@ footer {
 					.product-category-text {
 						display: flex;
 						flex-direction: column;
+						padding: 5%;
+						margin: 0;
 						.category-title {
-							color: var(--Dark-Blue);
-							font-family: Poppins;
-							font-size: var(--H2-Font);
-							font-style: normal;
-							font-weight: 600;
-							line-height: normal;
 							margin: 13px 0 38px 0;
 							letter-spacing: 0.075px;
-						}
-						.category-desc {
-							color: var(--Text-Color);
-							font-family: Poppins;
-							font-size: var(--H3-Font);
-							font-style: normal;
-							font-weight: 400;
-							line-height: normal;
-							letter-spacing: 0.15px;
 						}
 					}
 				}

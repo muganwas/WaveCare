@@ -18,34 +18,35 @@ nav {
 	#links {
 		display: flex;
 		width: 100%;
-		padding: 15px 0 0px;
+		box-sizing: border-box;
 		justify-content: center;
 		align-items: center;
-		background-color: var(--Dark-Blue);
+		background-color: var(--Blue);
+		height: 33px;
 		.navigation {
 			display: flex;
-			height: 54px;
+			position: relative;
+			height: 43px;
 			margin-right: 40px;
 			justify-content: center;
 			align-items: center;
-			padding-bottom: 2px;
+			padding: 10px 2px 2px;
 			a {
-				display: inline-flex;
-				height: 100%;
+				display: flex;
 				justify-content: center;
 				align-items: center;
 				text-decoration: none;
 				color: var(--White);
-				font-family: Poppins;
+				font-family: Open Sans;
 				font-size: var(--navigation);
 				font-style: normal;
-				font-weight: 600;
-				line-height: 24px;
+				font-weight: 400;
+				line-height: 24px; /* 150% */
 				letter-spacing: 0.08px;
 			}
 		}
 		.navigation:has(> a.active) {
-			border-bottom: 4px solid var(--White);
+			border-bottom: 4px solid var(--Blue);
 		}
 		.navigation.dropdown {
 			position: relative;
@@ -66,7 +67,7 @@ nav {
 			position: absolute;
 			width: 600px;
 			left: 0;
-			top: 58px;
+			top: 45px;
 			padding: 10px 5px;
 			background-color: rgba(255, 255, 255, 0.8);
 			z-index: 10;
@@ -130,6 +131,7 @@ nav {
 			align-items: center;
 			position: absolute;
 			top: 117px;
+			height: auto;
 			z-index: 100;
 			.navigation {
 				display: flex;
@@ -138,6 +140,9 @@ nav {
 				justify-content: center;
 				align-items: center;
 				padding-bottom: 2px;
+			}
+			.navigation:has(> a.active) {
+				border-bottom: 4px solid var(--White);
 			}
 			.navigation.dropdown:after {
 				content: none;
