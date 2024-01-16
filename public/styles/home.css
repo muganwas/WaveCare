@@ -58,7 +58,7 @@ main {
 		flex-direction: column;
 		margin: 0 241px;
 		border-radius: 15px;
-		background: var(--Dark-Blue);
+		background: var(--Blue);
 		padding: 40px;
 		#prod-cat-title {
 			color: var(--White);
@@ -253,7 +253,7 @@ main {
 		height: 477px;
 		justify-content: center;
 		align-items: center;
-		background: var(--Dark-Blue);
+		background: var(--Blue);
 		#book-text {
 			display: flex;
 			flex: 1;
