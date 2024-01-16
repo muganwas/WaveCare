@@ -366,6 +366,10 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.flipped {
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
 @media screen and (max-width: 1400px) {
 	:root {
 	}
