@@ -10,7 +10,9 @@
 	--White: #ffffff;
 	--Blue: #20a0d8;
 	--Dark-Blue: #5d82a9;
+	--LBlue: #80d0f4;
 	--H1-Color: #262626;
+	--Section-title: #30617a;
 	--Text-Color: #727272;
 	--Bold-Text: #454545;
 	--Aqua: #01c0da;
@@ -19,9 +21,9 @@
 	--navigation: 16px;
 	--desc-1: 20px;
 	--Page-title: 32px;
-	--H1-Font: 60px;
+	--H1-Font: 50px;
 	--H2-Font: 48px;
-	--H3-Font: 26px;
+	--H3-Font: 24px;
 }
 
 @keyframes fadeIn {
@@ -362,7 +364,7 @@ html {
 
 body {
 	box-sizing: border-box;
-	font-family: 'Poppins';
+	font-family: 'Open Sans';
 	margin: 0;
 	padding: 0;
 }
