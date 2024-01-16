@@ -141,6 +141,7 @@ nav {
 			z-index: 100;
 			#sub-links {
 				flex-direction: column;
+				bottom: 20px;
 				.navigation {
 					display: flex;
 					height: 49px;
