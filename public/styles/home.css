@@ -623,18 +623,18 @@ main#products-main {
 		#pagination-container {
 			display: flex;
 			box-sizing: border-box;
-			justify-content: space-between;
+			justify-content: flex-end;
 			align-items: center;
-			#pagination {
+			/* #pagination {
 				display: flex;
 				color: var(--Text-Color);
-				font-family: Poppins;
+				font-family: 'Open Sans';
 				font-size: var(--navigation);
 				font-style: normal;
 				font-weight: 500;
-				line-height: 24px; /* 150% */
+				line-height: 24px;
 				letter-spacing: 0.08px;
-			}
+			} */
 			#sorting {
 				display: flex;
 				position: relative;
@@ -648,30 +648,39 @@ main#products-main {
 				#selected-sorting {
 					display: inline-flex;
 					color: var(--Bold-Text);
-					font-family: Poppins;
+					font-family: 'Open Sans';
 					font-size: var(--navigation);
 					font-style: normal;
-					font-weight: 500;
-					line-height: 24px;
-					letter-spacing: 0.08px;
+					font-weight: 600;
+					line-height: normal;
+					letter-spacing: 0.16px;
 				}
 				#sorting-types {
 					display: none;
 					position: absolute;
+					box-sizing: border-box;
+					margin-left: -1px;
+					margin-right: -1px;
 					padding: 0 20px;
 					background-color: var(--White);
 					border-bottom-right-radius: 5px;
 					border-bottom-left-radius: 5px;
-					box-shadow: 0px 2px 3px var(--LGrey);
+					border-left: 1px solid var(--LGrey);
+					border-bottom: 1px solid var(--LGrey);
+					border-right: 1px solid var(--LGrey);
+					span {
+						display: flex;
+						padding: 5px 0;
+					}
 				}
 			}
 			#sorting::after {
 				content: '';
 				display: inline-flex;
-				height: 24px;
-				width: 24px;
+				height: 20px;
+				width: 20px;
 				box-sizing: border-box;
-				padding: 6px 4px;
+				margin: 6px 4px;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
@@ -728,12 +737,11 @@ main#products-main {
 					color: var(--Dark-Blue);
 					text-align: center;
 					justify-content: center;
-					font-family: Poppins;
-					font-size: 24px;
+					font-family: 'Open Sans';
+					font-size: var(--H3-Font);
 					font-style: normal;
-					font-weight: 500;
-					line-height: 24px; /* 100% */
-					letter-spacing: 0.12px;
+					font-weight: 600;
+					line-height: normal;
 					padding: 16px 0 24px;
 				}
 			}
