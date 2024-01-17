@@ -347,6 +347,9 @@ main#about-main {
 	padding: 200px 240px;
 	#about-desc {
 		display: none;
+		color: var(--Text-Color);
+		font-family: 'Open Sans', sans-serif;
+		font-size: var(--sm-font);
 	}
 	.about-section {
 		display: flex;
@@ -355,8 +358,8 @@ main#about-main {
 		.section-image-container {
 			#about-img {
 				display: flex;
-				width: 610.355px;
-				height: 584.968px;
+				width: 530px;
+				height: 507px;
 				flex-shrink: 0;
 				background-image: url('../images/vet-xray.png');
 				background-size: 70%;
@@ -369,8 +372,8 @@ main#about-main {
 			}
 			#network-img {
 				display: flex;
-				width: 610.355px;
-				height: 584.968px;
+				width: 530px;
+				height: 531px;
 				flex-shrink: 0;
 				background-image: url('../images/vet-xray.png');
 				background-size: 70%;
@@ -389,21 +392,22 @@ main#about-main {
 			.section-text-title {
 				display: inline-flex;
 				margin-bottom: 30px;
-				color: var(--H1-Color);
-				font-size: var(--H2-Font);
+				font-family: 'Open Sans', sans-serif;
+				color: var(--Section-title);
+				font-size: var(--Page-title);
 				font-style: normal;
 				font-weight: 600;
-				line-height: 52px; /* 108.333% */
+				line-height: normal;
 				text-transform: capitalize;
 			}
 			.section-text-desc {
+				font-family: 'Open Sans', sans-serif;
 				color: var(--Text-Color);
 				text-align: justify;
 				font-size: var(--navigation);
 				font-style: normal;
 				font-weight: 400;
-				line-height: 24px; /* 150% */
-				letter-spacing: 0.08px;
+				line-height: normal;
 			}
 		}
 	}
