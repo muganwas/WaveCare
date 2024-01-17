@@ -42,7 +42,7 @@ nav {
 					align-items: center;
 					text-decoration: none;
 					color: var(--White);
-					font-family: 'Open Sans';
+					font-family: 'Open Sans', sans-serif;
 					font-size: var(--navigation);
 					font-style: normal;
 					font-weight: 400;

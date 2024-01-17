@@ -3,7 +3,7 @@
 	flex-direction: column;
 	#slider-title {
 		color: var(--H1-Color);
-		font-family: 'Open Sans';
+		font-family: 'Open Sans', sans-serif;
 		font-size: var(--Page-title);
 		font-style: normal;
 		font-weight: 600;
@@ -23,7 +23,7 @@
 			.testimonial-quote {
 				display: flex;
 				color: var(--Text-Color);
-				font-family: 'Open Sans';
+				font-family: 'Open Sans', sans-serif;
 				font-size: var(--navigation);
 				font-style: normal;
 				font-weight: 400;
@@ -46,7 +46,7 @@
 					.client-name {
 						color: var(--Bold-Text);
 						text-align: center;
-						font-family: 'Open Sans';
+						font-family: 'Open Sans', sans-serif;
 						font-size: var(--H3-Font);
 						font-style: normal;
 						font-weight: 600;
@@ -57,7 +57,7 @@
 					.client-address {
 						display: flex;
 						color: var(--Text-Color);
-						font-family: 'Open Sans';
+						font-family: 'Open Sans', sans-serif;
 						font-size: var(--navigation);
 						font-style: normal;
 						font-weight: 400;
